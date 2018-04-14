@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PackageId>NetCore.Azure.Blob</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Neville Nazerane</Authors>
+    <Description>
+      Service for azure blob storage
+    </Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>
+      - add service using AddAzureblob() function overloads
+    </PackageReleaseNotes>
+    <PackageTags>netcore azure blob storage</PackageTags>
+    <PackageProjectUrl>https://github.com/neville-nazerane/netcore.azure.blob</PackageProjectUrl>
+    <RootNamespace>NetCore.Azure.Blob</RootNamespace>
+    <AssemblyName>NetCore.Azure.Blob</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediaTypeMap" Version="2.1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.1.1" />
+  </ItemGroup>
+
+</Project>
