@@ -1,7 +1,8 @@
 # netcore.azure.blob
 Service for azure blob storage
 
-> Add package
-  services.AddAzureBlob(...)
+- Add nuget package `NetCore.Azure.Blob`
 
-> Access blob service with DI using `IBlobManager`
+- Add servicee using `services.AddAzureBlob(...)`
+
+- Access blob service with DI using `IBlobManager`
