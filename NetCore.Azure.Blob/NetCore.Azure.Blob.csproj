@@ -1,16 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>NetCore.Azure.Blob</PackageId>
-    <PackageVersion>1.0.3</PackageVersion>
+    <PackageVersion>1.0.4</PackageVersion>
     <Authors>Neville Nazerane</Authors>
     <Description>
       Service for azure blob storage
     </Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      - Set up in .net standard framework
+      - Added additional helper functions
+      - Added direct upload text to blob functions
     </PackageReleaseNotes>
     <PackageTags>netcore azure blob storage</PackageTags>
     <PackageProjectUrl>https://github.com/neville-nazerane/netcore.azure.blob</PackageProjectUrl>

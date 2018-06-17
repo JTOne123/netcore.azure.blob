@@ -41,7 +41,18 @@ namespace NetCore.Azure.Blob
         public async Task<string> AddToContainer(string ContainerName, IFormFile Image)
             => await GetContainer(ContainerName).UploadIFormFile(Image);
 
+        public async Task<string> AddToContainer(string ContainerName, string Content)
+        {
+            string fileName = Guid.NewGuid().ToString("N");
+            await AddToContainer(ContainerName, fileName, Content);
+            return fileName;
+        }
 
+        public async Task AddToContainer(string ContainerName, string FileName, string Content)
+            => await GetBlockBlobReference(ContainerName, FileName).UploadTextAsync(Content);
+
+        public CloudBlockBlob GetBlockBlobReference(string ContainerName, string BlobName)
+            => GetContainer(ContainerName).GetBlockBlobReference(BlobName);
     }
 
 }

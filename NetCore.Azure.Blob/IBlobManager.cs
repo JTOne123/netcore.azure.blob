@@ -16,7 +16,13 @@ namespace NetCore.Azure.Blob
 
         CloudBlobContainer GetContainer(string ContainerName);
 
+        CloudBlockBlob GetBlockBlobReference(string ContainerName, string BlobName);
+
         Task<string> AddToContainer(string ContainerName, IFormFile Image);
+
+        Task<string> AddToContainer(string ContainerName, string Content);
+
+        Task AddToContainer(string ContainerName, string FileName, string Content);
 
     }
 }
