@@ -1,5 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
-using NetCore.Azure.Blob;
+﻿using Azure.Blob.Core;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Text;

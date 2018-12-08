@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Options;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.WindowsAzure.Storage.Auth;
@@ -11,7 +10,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NetCore.Azure.Blob
+namespace Azure.Blob.Core
 {
     class BlobManager : IBlobManager
     {
@@ -32,14 +31,6 @@ namespace NetCore.Azure.Blob
         public CloudBlobContainer GetContainer(string ContainerName)
                                 => GetBlobClient().GetContainerReference(ContainerName);
 
-        /// <summary>
-        /// Adds an image to the specified container 
-        /// </summary>
-        /// <param name="ContainerName"></param>
-        /// <param name="Image"></param>
-        /// <returns></returns>
-        public async Task<string> AddToContainerAsync(string ContainerName, IFormFile Image)
-            => await GetContainer(ContainerName).UploadIFormFileAsync(Image);
 
 
     }

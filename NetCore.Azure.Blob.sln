@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Azure.Blob", "NetCore.Azure.Blob\NetCore.Azure.Blob.csproj", "{31D034C6-8E42-42B6-8CBD-E18E92AB1F8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Azure.Blob", "NetCore.Azure.Blob\NetCore.Azure.Blob.csproj", "{31D034C6-8E42-42B6-8CBD-E18E92AB1F8D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestWebsite", "TestWebsite\TestWebsite.csproj", "{8FE46F82-A6FA-4D7D-8D82-4A0EC3B73785}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.Blob.Core", "Azure.Blob.Core\Azure.Blob.Core.csproj", "{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,18 @@ Global
 		{8FE46F82-A6FA-4D7D-8D82-4A0EC3B73785}.Release|x64.Build.0 = Release|Any CPU
 		{8FE46F82-A6FA-4D7D-8D82-4A0EC3B73785}.Release|x86.ActiveCfg = Release|Any CPU
 		{8FE46F82-A6FA-4D7D-8D82-4A0EC3B73785}.Release|x86.Build.0 = Release|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Debug|x64.Build.0 = Debug|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Debug|x86.Build.0 = Debug|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Release|x64.ActiveCfg = Release|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Release|x64.Build.0 = Release|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Release|x86.ActiveCfg = Release|Any CPU
+		{8353DC5D-2F83-471B-BAE9-CF5E62CCC004}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

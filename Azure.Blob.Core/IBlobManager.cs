@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.WindowsAzure.Storage;
+﻿using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NetCore.Azure.Blob
+namespace Azure.Blob.Core
 {
     public interface IBlobManager
     {
@@ -15,8 +14,6 @@ namespace NetCore.Azure.Blob
         CloudBlobClient GetBlobClient();
 
         CloudBlobContainer GetContainer(string ContainerName);
-
-        Task<string> AddToContainerAsync(string ContainerName, IFormFile Image);
 
     }
 }
