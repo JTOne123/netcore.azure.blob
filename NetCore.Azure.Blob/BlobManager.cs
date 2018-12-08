@@ -38,8 +38,8 @@ namespace NetCore.Azure.Blob
         /// <param name="ContainerName"></param>
         /// <param name="Image"></param>
         /// <returns></returns>
-        public async Task<string> AddToContainer(string ContainerName, IFormFile Image)
-            => await GetContainer(ContainerName).UploadIFormFile(Image);
+        public async Task<string> AddToContainerAsync(string ContainerName, IFormFile Image)
+            => await GetContainer(ContainerName).UploadIFormFileAsync(Image);
 
 
     }

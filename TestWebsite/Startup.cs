@@ -24,7 +24,7 @@ namespace TestWebsite
         {
 
             services.AddAzureBlob(Configuration.GetSection("azBlob"));
-
+            services.Configure<string>(Configuration);
             services.AddMvc();
         }
 

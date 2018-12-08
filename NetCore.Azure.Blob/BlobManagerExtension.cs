@@ -14,14 +14,7 @@ namespace NetCore.Azure.Blob
     public static class BlobManagerExtension
     {
 
-        public static IServiceCollection AddAzureBlob(this IServiceCollection services, Action<BlobManagerOptions> options) 
-            => services.Configure(options).AddSingleton<IBlobManager, BlobManager>();
-
-        public static IServiceCollection AddAzureBlob(this IServiceCollection services, IConfiguration configuration)
-            => services.Configure<BlobManagerOptions>(configuration).AddSingleton<IBlobManager, BlobManager>();
-
-
-        public static async Task<string> UploadIFormFile(this CloudBlobContainer container, IFormFile Image)
+        public static async Task<string> UploadIFormFileAsync(this CloudBlobContainer container, IFormFile Image)
         {
 
             string extension = Path.GetExtension(Image.FileName);

@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
 using NetCore.Azure.Blob;
 using System;
 using System.Collections.Generic;
@@ -10,9 +12,9 @@ namespace TestWebsite.Controllers
 {
     public class UploadController : Controller
     {
-        private readonly BlobManager blobManager;
+        private readonly IBlobManager blobManager;
 
-        public UploadController(BlobManager blobManager)
+        public UploadController(IBlobManager blobManager)
         {
             this.blobManager = blobManager;
         }
@@ -23,8 +25,8 @@ namespace TestWebsite.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(UploadViewModel model)
         {
-            string fname = await blobManager.AddToContainer("samples", model.File);
-            string fname2 = await blobManager.AddToContainer("samples", model.OtherFile);
+            string fname = await blobManager.AddToContainerAsync("nuget", model.File);
+            string fname2 = await blobManager.AddToContainerAsync("nuget", model.OtherFile);
             return View(model);
         }
     }
