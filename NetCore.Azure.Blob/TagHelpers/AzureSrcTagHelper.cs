@@ -1,4 +1,4 @@
-﻿using Azure.Blob.Core;
+﻿using Common.Azure.Blob;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.Extensions.Options;
 using System;

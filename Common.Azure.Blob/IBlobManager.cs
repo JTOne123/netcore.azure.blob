@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Azure.Blob.Core
+namespace Common.Azure.Blob
 {
     public interface IBlobManager
     {

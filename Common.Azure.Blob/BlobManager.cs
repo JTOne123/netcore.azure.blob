@@ -10,7 +10,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Azure.Blob.Core
+namespace Common.Azure.Blob
 {
     class BlobManager : IBlobManager
     {

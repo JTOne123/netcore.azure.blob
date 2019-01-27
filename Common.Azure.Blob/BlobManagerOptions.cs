@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Azure.Blob.Core
+namespace Common.Azure.Blob
 {
 
     public class BlobManagerOptions

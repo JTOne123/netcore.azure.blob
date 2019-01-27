@@ -1,4 +1,4 @@
-﻿using Azure.Blob.Core;
+﻿using Common.Azure.Blob;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;

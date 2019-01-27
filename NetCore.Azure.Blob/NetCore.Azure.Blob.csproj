@@ -11,7 +11,8 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
       - Added tag helper for img
-      
+      - Seperated code with renamed async functions
+      - Updated packages for nuget 2.2
     </PackageReleaseNotes>
     <PackageTags>netcore azure blob storage</PackageTags>
     <PackageProjectUrl>https://github.com/neville-nazerane/netcore.azure.blob</PackageProjectUrl>
@@ -20,6 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Common.Azure.Blob" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.2.0" />
     <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
@@ -30,10 +32,6 @@
       <Pack>true</Pack>
       <PackagePath>README.txt</PackagePath>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Azure.Blob.Core\Azure.Blob.Core.csproj" />
   </ItemGroup>
 
 

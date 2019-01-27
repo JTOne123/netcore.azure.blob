@@ -1,4 +1,4 @@
-﻿using Azure.Blob.Core;
+﻿using Common.Azure.Blob;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.AspNetCore.Razor.TagHelpers;
