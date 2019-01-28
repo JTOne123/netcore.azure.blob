@@ -2,12 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>2.0.1</PackageVersion>
     <Authors>Neville Nazerane</Authors>
     <Description>
         Helpers and services for azure blob storage
     </Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>
+      - Added property for path prefix in options
+      - Updated version to match main nuget
+    </PackageReleaseNotes>
     <PackageTags>azure blob storage DI dependency injection services</PackageTags>
     <PackageProjectUrl>https://github.com/neville-nazerane/netcore.azure.blob</PackageProjectUrl>
   </PropertyGroup>

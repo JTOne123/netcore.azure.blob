@@ -10,5 +10,7 @@ namespace Common.Azure.Blob
         public string KeyName { get; set; }
         public string Key { get; set; }
         public string AccountName { get; set; }
+        public string PathPrefix { get; set; }
+
     }
 }

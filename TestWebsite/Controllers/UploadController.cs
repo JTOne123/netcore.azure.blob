@@ -25,6 +25,7 @@ namespace TestWebsite.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(UploadViewModel model)
         {
+
             string fname = await blobManager.AddToContainerAsync("nuget", model.File);
             string fname2 = await blobManager.AddToContainerAsync("nuget", model.OtherFile);
             return View(model);

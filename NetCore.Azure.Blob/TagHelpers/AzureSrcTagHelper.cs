@@ -15,6 +15,7 @@ namespace NetCore.Azure.Blob.TagHelpers
 
         public AzureSrcTagHelper(IOptions<BlobManagerOptions> options)
         {
+            
             this.options = options;
         }
 
@@ -23,7 +24,7 @@ namespace NetCore.Azure.Blob.TagHelpers
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.Attributes.SetAttribute("src", 
-                   $"https://{options.Value.AccountName}.blob.core.windows.net/{AzureSrc}");
+                   $"https://{options.Value.PathPrefix}{options.Value.AccountName}.blob.core.windows.net/{AzureSrc}");
 
             base.Process(context, output);
         }

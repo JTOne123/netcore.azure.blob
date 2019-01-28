@@ -3,16 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>NetCore.Azure.Blob</PackageId>
-    <PackageVersion>2.0.0</PackageVersion>
+    <PackageVersion>2.0.1</PackageVersion>
     <Authors>Neville Nazerane</Authors>
     <Description>
       Service for azure blob storage
     </Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      - Added tag helper for img
-      - Seperated code with renamed async functions
-      - Updated packages for nuget 2.2
+      - Added url prefix for tag helper
     </PackageReleaseNotes>
     <PackageTags>netcore azure blob storage</PackageTags>
     <PackageProjectUrl>https://github.com/neville-nazerane/netcore.azure.blob</PackageProjectUrl>
@@ -21,7 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Common.Azure.Blob" Version="1.0.0" />
+    <PackageReference Include="Common.Azure.Blob" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.2.0" />
     <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
