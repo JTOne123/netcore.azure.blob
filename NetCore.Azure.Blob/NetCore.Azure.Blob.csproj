@@ -3,14 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>NetCore.Azure.Blob</PackageId>
-    <PackageVersion>2.0.1</PackageVersion>
+    <PackageVersion>2.0.2</PackageVersion>
     <Authors>Neville Nazerane</Authors>
     <Description>
       Service for azure blob storage
     </Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      - Added url prefix for tag helper
+      - Bug fix: fixed path with prefix
     </PackageReleaseNotes>
     <PackageTags>netcore azure blob storage</PackageTags>
     <PackageProjectUrl>https://github.com/neville-nazerane/netcore.azure.blob</PackageProjectUrl>
